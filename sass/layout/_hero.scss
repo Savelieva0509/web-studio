@@ -17,17 +17,27 @@
     background-repeat: no-repeat;
     background-position: center;
     .container {
-            max-width: 696px;
+            max-width: 360px;
+            padding: 0;
+            @include desktop {
+                max-width: 696px;
+            }
+
+
         }
 }
 
 
 .hero__title {
-    @include font(44px, 900, 1.4, 0.06em);
-    
+    @include font(26px, 900, 1.6, 0.06em);
     text-transform: uppercase;
 
     color: var(--primary-white-color);
 
     margin-bottom: 30px;
+
+    @include desktop {
+        @include font(44px, 900, 1.4, null);
+    }
 }
+

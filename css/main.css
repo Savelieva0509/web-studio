@@ -856,17 +856,30 @@ body {
   background-position: center;
 }
 .hero .container {
-  max-width: 696px;
+  max-width: 360px;
+  padding: 0;
+}
+@media screen and (min-width: 1200px) {
+  .hero .container {
+    max-width: 696px;
+  }
 }
 
 .hero__title {
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.4;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.4;
+  }
 }
 
 .header {
