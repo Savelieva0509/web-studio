@@ -1,0 +1,115 @@
+.form {
+    width: 100%;
+}
+
+.form-field {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field__label {
+    @include font(12px,null, 1.14, 0.01em);
+    
+    margin-bottom: 4px;
+}
+
+.form-field__input-wrap {
+    position: relative;
+}
+
+.form-field__input {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    color: inherit;
+
+    padding-left: 42px;
+    width: 100%;
+    outline: transparent;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        border-color: var(--accent-color);
+    }
+}
+
+.form-field__icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    fill: var(--title-text-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .form-field__input:focus + & {
+            fill: var(--accent-color);
+        }
+}
+
+
+.user-text-field {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-text {
+    @include font(14px, null, 1.14, 0.01em);
+    
+    color: var(--primary-text-color);
+
+    resize: none;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    padding: 12px 16px;
+}
+
+
+.check-field {
+    margin-bottom: 30px;
+}
+
+.check-text {
+    @include font(14px, null, 1.7, 0.03em);
+    
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+            content: "";
+            width: 16px;
+            height: 15px;
+            border: 2px solid var(--title-text-color);
+            border-radius: 3px;
+    
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+            margin-right: 8px;
+        }
+}
+
+.check-input:checked+.check-text::before {
+    background-color: var(--accent-color);
+    background-image: url(../images/icons/icon\ check.svg);
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.check-input:focus+.check-text::before {
+    border-color: var(--accent-color);
+}
+
+.agree-link {
+    color: var(--accent-color);
+}

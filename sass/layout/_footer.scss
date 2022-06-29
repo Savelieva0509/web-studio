@@ -1,0 +1,28 @@
+footer {
+    background-color: var(--background-accent-color);
+    padding: 60px 0;
+}
+
+.footer-сontent {
+    margin-right: 70px;
+}
+
+.footer-page {
+    display: flex;
+    align-items: baseline;
+}
+
+
+.social-network {
+    margin-right: auto;
+}
+
+.social-title {
+    @include font(14px, 700, 1.14, 0.03em);
+    
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+
+    margin-bottom: 20px;
+}

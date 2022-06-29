@@ -1,0 +1,15 @@
+.title {
+    // @include font(36px,700, 1.17, 0.03em);
+    @include font(28px, 700, 1.17, 0.03em);
+    
+    text-align: center;
+
+    color: var(--title-text-color);
+
+    margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+            padding-bottom:50px;
+    }
+
+}
