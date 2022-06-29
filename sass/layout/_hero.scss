@@ -16,15 +16,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
     .container {
             max-width: 360px;
             padding: 0;
             @include desktop {
                 max-width: 696px;
-            }
-
-
         }
+    }
 }
 
 
