@@ -15,17 +15,13 @@
 
     width: 100%;
 
-    @media screen and (min-width:768px) {
+    @include tablet {
             width: calc((100% - 30px) / 2);
         }
-                @media screen and (min-width:1200px) {
+            @include desktop {
                     width: calc((100% - 90px) / 4);
                 }
 }
-
-// .team-list__item + .team-list__item {
-//     margin-left: 30px;
-// }
 
 
 .team-list__name {
@@ -48,7 +44,7 @@
     padding-top: 30px;
     padding-bottom: 24px;
 
-    @media screen and (min-width:1200px) {
+    @include desktop{
         padding-bottom: 30px;;
         }
 }

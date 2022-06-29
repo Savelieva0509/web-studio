@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
 }
 
 .clients-list__item {
@@ -9,11 +10,11 @@
     height: 92px;
     display: flex;
 
-    @media screen and (min-width:768px) {
+    @include tablet{
             width: calc((100% - 60px) / 3);
         }
     
-        @media screen and (min-width:1200px) {
+        @include desktop {
             width: calc((100% - 150px) / 6);
         }
 }
@@ -38,7 +39,6 @@
                 border-color: var(--accent-color);
             }
 }
-
 
 .clients-list__icon {
     width: 106px;
