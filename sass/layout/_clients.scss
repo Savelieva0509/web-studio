@@ -2,21 +2,23 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
 }
 
 .clients-list__item {
-    width: 170px;
     height: 92px;
     display: flex;
 
+    @include mobile {
+        width: calc((100% - 30px) / 2);
+    }
+
     @include tablet{
-            width: calc((100% - 60px) / 3);
-        }
+        width: calc((100% - 60px) / 3);
+    }
     
-        @include desktop {
-            width: calc((100% - 150px) / 6);
-        }
+    @include desktop {
+        width: calc((100% - 150px) / 6);
+    }
 }
 
 .clients-list__link {

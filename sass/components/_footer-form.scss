@@ -1,5 +1,5 @@
 .footer-form {
-    display: flex;
+    // display: flex;
 }
 
 .footer-subscribe-title {
@@ -13,7 +13,9 @@
 }
 
 .footer-input {
-    width: 358px;
+    width: 100%;
+    // width: 358px;
+
     height: 50px;
 
     @include font(16px, null, 1.25, 0.03em);
@@ -26,7 +28,8 @@
     background-color: transparent;
     outline: transparent;
 
-    margin-right: 12px;
+    margin-bottom: 20px;
+    // margin-right: 12px;
     padding-left: 16px;
 
     &::placeholder {
