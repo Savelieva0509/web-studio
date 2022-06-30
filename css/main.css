@@ -927,6 +927,8 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
 }
 .nav__link:hover, .nav__link:focus {
   color: var(--accent-color);
@@ -1134,6 +1136,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
 }
 
