@@ -3,21 +3,40 @@ footer {
     padding: 60px 0;
 }
 
+
 .footer-сontent {
     margin-bottom: 60px;
-    // margin-right: 70px;
+
+    @include desktop {
+        margin-right: 70px;
+        margin-bottom: 0;
+    }
+    
 }
 
 .footer-page {
     text-align: center;
-    // display: flex;
-    // align-items: baseline;
-}
+    
 
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    @include desktop { 
+        display: flex;
+        align-items: baseline;
+        text-align: left;
+    }
+}
 
 .social-network {
     margin-bottom: 60px;
-    // margin-right: auto;
+
+    @include desktop {
+        margin-right: auto;
+        margin-bottom: 0;
+    }
 }
 
 .social-title {

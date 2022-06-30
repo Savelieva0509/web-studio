@@ -1,5 +1,7 @@
 .footer-form {
-    // display: flex;
+    @include desktop {
+        display: flex;
+    }
 }
 
 .footer-subscribe-title {
@@ -13,10 +15,15 @@
 }
 
 .footer-input {
-    width: 100%;
-    // width: 358px;
-
+    width: 100%;  
     height: 50px;
+
+    @include tablet {
+        width: 450px;
+    }
+    @include desktop {
+        width: 358px;
+    }
 
     @include font(16px, null, 1.25, 0.03em);
 
@@ -29,8 +36,12 @@
     outline: transparent;
 
     margin-bottom: 20px;
-    // margin-right: 12px;
     padding-left: 16px;
+
+    @include desktop {
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
 
     &::placeholder {
         @include font(16px,null, 1.25, 0.03em);
