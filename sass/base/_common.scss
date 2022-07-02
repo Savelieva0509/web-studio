@@ -2,7 +2,11 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
-    padding-top: 80px;
+    padding-top: 60px;
+
+    @include tablet {
+        padding-top: 80px;
+    }
 }
 
 .list {

@@ -21,22 +21,44 @@
 }
 
 .header-contacts {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+    display: none;
+
+    @include tablet {
+        display:flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 
     &__item + &__item {
-        margin-left: 50px;
+        @include tablet {
+            margin-top: 10px;
+        }
+
+        @include desktop {
+            margin-top: 0;
+            margin-left: 50px;
+        }
     }
 }
 
 .header-contacts__link {
-    @include font(14px, 500, 1.4, 0.02em);
+        @include tablet {
+        @include font (12px, 500, 1.16, 0.02em);
+    }
+
+    @include desktop {
+        @include font (14px, 500, 1.4, 0.02em);
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
     
     color: inherit;
-
-    padding-top: 32px;
-    padding-bottom: 32px;
     display: flex;
     align-items: center;
 
