@@ -90,24 +90,23 @@
     }
 }
 
-
 .mob-menu {
     position: fixed;
     top: 0;
     left: 0;
     background-color: var(--primary-white-color);
-    width: 100vh;
+    width: 100%;
     height: 100vh;
 
-    padding: 48px 40px;
+    padding: 40px 48px;
     
     >.container {
-        margin: 0;
-        width: 386px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+        max-width: 386px;
         overflow-y: auto;
     }
 }
@@ -117,6 +116,9 @@
     padding: 0;
     display: block;
     background: transparent;
+    top:10px;
+    margin-left: auto;
+    
 }
 
 .mob-menu-list {
