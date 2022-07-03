@@ -54,7 +54,7 @@
     }
 
     
-    .container {
+    >.container {
             max-width: 360px;
             padding: 0;
             @include desktop {

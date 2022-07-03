@@ -78,4 +78,62 @@
     color: var(--accent-color);
 }
 
+.menu-open-button {
+    @extend %button;
+    margin-left: auto;
+    padding: 0;
+    display: block;
+    background: transparent;
 
+    @include tablet {
+        display: none;
+    }
+}
+
+
+.mob-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-white-color);
+    width: 100vh;
+    height: 100vh;
+
+    padding: 48px 40px;
+    
+    >.container {
+        margin: 0;
+        width: 386px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        overflow-y: auto;
+    }
+}
+
+.menu-close-button {
+    @extend %button;
+    padding: 0;
+    display: block;
+    background: transparent;
+}
+
+.mob-menu-list {
+    margin-bottom: 40px;
+}
+
+
+.mob-menu-list__item {
+    @include font (40px,500,1.17,00.02em);
+
+    color:var(--title-text-color);
+
+    &+& {
+        margin-top: 35px;
+    }
+}
+
+.current {
+    color: var(--accent-color);
+}

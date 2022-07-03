@@ -1,18 +1,5 @@
 
 .modal {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1) rotateZ(360deg);
-
-    width: 450px;
-    height: 609px;
-
-    @include desktop {
-        width: 528px;
-        height: 581px;
-    }
-    
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -22,6 +9,22 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     padding: 40px;
+    overflow-y: auto;
+    position: relative;
+
+    @include mobile {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(1) rotateZ(360deg);
+            max-width: 450px;
+            height: 609px;
+        }
+    
+    @include desktop {
+            max-width: 528px;
+            height: 581px;
+        }
 
     .backdrop.is-hidden & {
             transform: translate(-50%, -50%) scale(0.9) rotateZ(270deg);
