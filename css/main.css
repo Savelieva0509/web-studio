@@ -325,6 +325,12 @@ body {
   margin: -1px;
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .filter-list__button, .menu-close-button, .menu-open-button, .modal-close-btn, .main-button--footer, .main-button--hero-form, .main-button {
   cursor: pointer;
   border: none;
@@ -1113,11 +1119,20 @@ body {
   padding: 0;
   display: block;
   background: transparent;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-open-button:hover, .menu-open-button:focus {
+  color: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .menu-open-button {
     display: none;
   }
+}
+
+.menu-open-icon {
+  fill: currentColor;
 }
 
 .mob-menu {
