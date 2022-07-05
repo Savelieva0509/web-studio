@@ -1,18 +1,14 @@
 .clients-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
 }
 
 .clients-list__item {
     height: 92px;
     display: flex;
-
-    @include mobile {
-        width: calc((100% - 30px) / 2);
-    }
-
+    width: calc((100% - 30px) / 2);
+    
     @include tablet{
         width: calc((100% - 60px) / 3);
     }
