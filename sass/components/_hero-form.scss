@@ -51,7 +51,6 @@
         }
 }
 
-
 .user-text-field {
     margin-bottom: 20px;
     display: flex;
@@ -74,6 +73,9 @@
 
 .check-field {
     margin-bottom: 30px;
+    display: inline-block;
+    
+   
 }
 
 .check-text {
@@ -85,21 +87,18 @@
     
     margin-bottom: 30px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     &::before {
-            content: "";
+            content:"";
             width: 16px;
             height: 15px;
             border: 2px solid var(--title-text-color);
             border-radius: 3px;
     
             transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-            margin-right: 7px;
-        }
+            
+            margin-right: 8px;
+            display: inline-block;
+    }        
 }
 
 .check-input:checked+.check-text::before {
