@@ -852,8 +852,13 @@ body {
 }
 
 .header-contacts__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts__icon {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

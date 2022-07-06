@@ -71,6 +71,10 @@
 }
 
 .header-contacts__icon {
-    margin-right: 10px;
+    margin-right: 8px;
     fill: currentColor;
+    
+    @include desktop {
+        margin-right: 10px;
+    }
 }

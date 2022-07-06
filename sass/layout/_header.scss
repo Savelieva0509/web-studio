@@ -201,8 +201,7 @@
 
 .mob-social-list__link {
     @include font (18px, 500, 1.22, 0.02em);
-    color: var(--accent-color);  
-
+    color: var(--accent-color); 
     margin-right: 10px;
 }
 
