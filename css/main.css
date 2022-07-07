@@ -636,8 +636,6 @@ body {
 
 .check-field {
   margin-bottom: 30px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .check-text {
@@ -663,6 +661,7 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 8px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .check-input:checked + .check-text::before {

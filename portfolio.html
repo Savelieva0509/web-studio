@@ -59,7 +59,29 @@
             <li class="portfolio-list__item">
                 <a href="" class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img src="./images/images.portfolio/technokryak.jpg" alt="Превью веб-сайта" width="370" class="portfolio-list__photo">
+                        <picture>
+                            <source srcset="
+                            ./images/images.portfolio/mob/project 1-1x_mob.jpg 1x,
+                            ./images/images.portfolio/mob/project 1-2x_mob.jpg 2x
+                            " 
+                            media="(min-width: 1200px)" />
+                            <source srcset="
+                            ./images/images.portfolio/tablet/project 1-1x_tablet.jpg 1x,
+                            ./images/images.portfolio/tablet/project 1-2x_tablet.jpg 2x
+                            " 
+                            media="(min-width: 768px)" />
+                            <source srcset="
+                            ./img/gallery-img-1-mob.jpeg    1x,
+                            ./img/gallery-img-1-mob-2x.jpeg 2x
+                            " 
+                            media="(min-width: 320px)" />
+                            
+                            <img 
+                            src="./images/images.portfolio/mob/project 1-1x_mob.jpg" 
+                            alt="Превью веб-сайта" width="370"
+                            class="portfolio-list__photo">
+                        </picture>
+                        
                         <p class="portfolio-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
                     </div>
