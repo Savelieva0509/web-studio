@@ -14,36 +14,88 @@
 </head>
 <body>
 
-<!-- Шапка сайта -->
-<header class="header">
-    <div class="container header__nav">
-        <nav class="nav">
-            <a href="./index.html" class="logo logo--black"><span class="logo logo--accent">Web</span>Studio</a>
-
-            <ul class="nav__list list">
-                <li class="nav__item"><a href="./index.html" class="nav__link link ">Студия</a></li>
-                <li class="nav__item"><a href="./portfolio.html" class="nav__link link current">Портфолио</a></li>
-                <li class="nav__item"><a href="" class="nav__link link">Контакты</a></li>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header__nav">
+            <nav class="nav">
+                <a href="./index.html" class="logo logo--header logo--black"><span
+                        class="logo logo--accent">Web</span>Studio</a>
+    
+                <ul class="nav__list list">
+                    <li class="nav__item"><a href="./index.html" class="nav__link link current">Студия</a></li>
+                    <li class="nav__item"><a href="./portfolio.html" class="nav__link link">Портфолио</a></li>
+                    <li class="nav__item"><a href="" class="nav__link link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="header-contacts list">
+                <li class="header-contacts__item">
+                    <a href="mailto:info@devstudio.com" class="header-contacts__link link "><svg
+                            class="header-contacts__icon" width="16" height="12">
+                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com </a>
+                </li>
+                <li class="header-contacts__item">
+                    <a href="tel:+380961111111" class="header-contacts__link link"> <svg class="header-contacts__icon"
+                            width="10" height="16">
+                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        </svg> +38 096 111 11 11</a>
+                </li>
             </ul>
-        </nav>
-        <ul class="header-contacts list">
-            <li class="header-contacts__item">
-                <a href="mailto:info@devstudio.com" class="header-contacts__link  link "><svg
-                        class="header-contacts__icon" width="16" height="12">
-                        <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                    </svg>info@devstudio.com </a>
-            </li>
-            <li class="header-contacts__item">
-                <a href="tel:+380961111111" class="header-contacts__link contacts-link link"> <svg
-                        class="header-contacts__icon" width="10" height="16">
-                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                    </svg> +38 096 111 11 11</a>
-            </li>
-        </ul>
-    </div>
-</header>
+            <button type="button" class="menu-open-button">
+                <svg class="menu-open-icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#menu-open-icon"></use>
+                </svg>
+            </button>
+        </div>
+    
+        <div class="mob-menu is-hidden">
+            <div class="container">
+                <div class="mob-menu-top">
+                    <button type="button" class="menu-close-button">
+                        <svg class="menu-close-icon" width="40" height="40">
+                            <use href="./images/symbol-defs.svg#menu-close-icon"></use>
+                        </svg>
+                    </button>
+                    <nav class="mob-nav">
+                        <ul class="mob-menu-list list">
+                            <li class="mob-menu-list__item"><a href="./index.html"
+                                    class="mob-menu-list__link link current">Студия</a></li>
+                            <li class="mob-menu-list__item"><a href="./portfolio.html"
+                                    class="mob-menu-list__link link">Портфолио</a></li>
+                            <li class="mob-menu-list__item"><a href="" class="mob-menu-list__link link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mob-menu-botton">
+                    <ul class="mob-contacts list">
+                        <li class="mob-contacts__item">
+                            <a href="tel:+380961111111" class="mob-contacts__tel link">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-contacts__item">
+                            <a href="mailto:info@devstudio.com" class="mob-contacts__email link">info@devstudio.com </a>
+                        </li>
+                    </ul>
+                    <ul class="mob-social-list list">
+                        <li class="mob-social-list__item">
+                            <a href="" class="mob-social-list__link link">Instagram</a>
+                        </li>
+                        <li class="mob-social-list__item">
+                            <a href="" class="mob-social-list__link link">Twitter</a>
+                        </li>
+                        <li class="mob-social-list__item">
+                            <a href="" class="mob-social-list__link link">Facebook</a>
+                        </li>
+                        <li class="mob-social-list__item">
+                            <a href="" class="mob-social-list__link link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
 
 <!------------------------ ПОРТФОЛИО------------------->
+
     <main>
         <section class="portfolio section">
             <div class="container">
@@ -61,23 +113,23 @@
                     <div class="portfolio-list__thumb">
                         <picture>
                             <source srcset="
-                            ./images/images.portfolio/mob/project 1-1x_mob.jpg 1x,
-                            ./images/images.portfolio/mob/project 1-2x_mob.jpg 2x
+                            ./images/images.portfolio/desktop/project-1-1x_desk.jpg 1x,
+                            ./images/images.portfolio/desktop/project-1-2x_desk.jpg 2x
                             " 
                             media="(min-width: 1200px)" />
                             <source srcset="
-                            ./images/images.portfolio/tablet/project 1-1x_tablet.jpg 1x,
-                            ./images/images.portfolio/tablet/project 1-2x_tablet.jpg 2x
+                            ./images/images.portfolio/tablet/project-1-1x_tablet.jpg 1x,
+                            ./images/images.portfolio/tablet/project-1-2x_tablet.jpg 2x
                             " 
                             media="(min-width: 768px)" />
                             <source srcset="
-                            ./img/gallery-img-1-mob.jpeg    1x,
-                            ./img/gallery-img-1-mob-2x.jpeg 2x
+                            ./images/images.portfolio/mob/project-1-1x_mob.jpg 1x,
+                            ./images/images.portfolio/mob/project-1-2x_mob.jpg 2x
                             " 
                             media="(min-width: 320px)" />
                             
                             <img 
-                            src="./images/images.portfolio/mob/project 1-1x_mob.jpg" 
+                            src="./images/images.portfolio/mob/project-1-1x_mob.jpg" 
                             alt="Превью веб-сайта" width="370"
                             class="portfolio-list__photo">
                         </picture>
@@ -94,7 +146,25 @@
             <li class="portfolio-list__item">
                 <a href="" class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img src="./images/images.portfolio/poster.jpg" alt="Превью веб-сайта" width="370" class="portfolio-list__photo">
+                        <picture>
+                            <source srcset="
+                            ./images/images.portfolio/desktop/project-2-1x_desk.jpg 1x,
+                            ./images/images.portfolio/desktop/project-2-2x_desk.jpg 2x
+                            " media="(min-width: 1200px)" />
+                            <source srcset="
+                            ./images/images.portfolio/tablet/project-2-1x_tablet.jpg 1x,
+                            ./images/images.portfolio/tablet/project-2-2x_tablet.jpg 2x
+                            " media="(min-width: 768px)" />
+                            <source srcset="
+                            ./images/images.portfolio/mob/project-2-1x_mob.jpg 1x,
+                            ./images/images.portfolio/mob/project-2-2x_mob.jpg 2x
+                            " media="(min-width: 320px)" />
+                            
+                            <img src="./images/images.portfolio/mob/project-2-1x_mob.jpg" 
+                            alt="Превью веб-сайта" width="370"
+                            class="portfolio-list__photo">
+                        </picture>
+
                         <p class="portfolio-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
@@ -109,7 +179,28 @@
             <li class="portfolio-list__item">
                 <a href="" class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img src="./images/images.portfolio/restoran.jpg" alt= "Превью приложения" width="370" class="portfolio-list__photo" >
+                        <picture>
+
+                            <source srcset="
+                                ./images/images.portfolio/desktop/project-3-1x_desk.jpg 1x,
+                                ./images/images.portfolio/desktop/project-3-2x_desk.jpg 2x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/images.portfolio/tablet/project-3-1x_tablet.jpg 1x,
+                                ./images/images.portfolio/tablet/project-3-2x_tablet.jpg 2x
+                                " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/images.portfolio/mob/project-3-1x_mob.jpg 1x,
+                                ./images/images.portfolio/mob/project-3-2x_mob.jpg 2x
+                                " media="(min-width: 320px)" />
+                        
+                                <img src="./images/images.portfolio/mob/project-3-1x_mob.jpg" 
+                                alt="Превью веб-сайта" 
+                                width="370"
+                                class="portfolio-list__photo">  
+
+                        </picture>
+
                         <p class="portfolio-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
@@ -123,7 +214,29 @@
             <li class="portfolio-list__item">
                 <a href="" class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img src="./images/images.portfolio/prime.jpg" alt="Изображение наушников" width="370" class="portfolio-list__photo">
+                        <picture>
+
+                            <source srcset="
+                                ./images/images.portfolio/desktop/project-4-1x_desk.jpg 1x,
+                                ./images/images.portfolio/desktop/project-4-2x_desk.jpg 2x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/images.portfolio/tablet/project-4-1x_tablet.jpg 1x,
+                                ./images/images.portfolio/tablet/project-4-2x_tablet.jpg 2x
+                                " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/images.portfolio/mob/project-4-1x_mob.jpg 1x,
+                                ./images/images.portfolio/mob/project-4-2x_mob.jpg 2x
+                                " media="(min-width: 320px)" />
+                            
+                                <img 
+                                src="./images/images.portfolio/mob/project-4-1x_mob.jpg" 
+                                alt="Превью веб-сайта" 
+                                width="370"
+                                class="portfolio-list__photo">
+
+                        </picture>
+
                         <p class="portfolio-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
@@ -137,7 +250,29 @@
             <li class="portfolio-list__item">
                 <a href="" class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img src="./images/images.portfolio/boxes.jpg" alt="Превью приложения" width="370" class="portfolio-list__photo">
+                        <picture>
+
+                            <source srcset="
+                                ./images/images.portfolio/desktop/project-5-1x_desk.jpg 1x,
+                                ./images/images.portfolio/desktop/project-5-2x_desk.jpg 2x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/images.portfolio/tablet/project-5-1x_tablet.jpg 1x,
+                                ./images/images.portfolio/tablet/project-5-2x_tablet.jpg 2x
+                                " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/images.portfolio/mob/project-5-1x_mob.jpg 1x,
+                                ./images/images.portfolio/mob/project-5-2x_mob.jpg 2x
+                                " media="(min-width: 320px)" />
+                                
+                                <img 
+                                src="./images/images.portfolio/mob/project-5-1x_mob.jpg" 
+                                alt="Превью веб-сайта" 
+                                width="370"
+                                class="portfolio-list__photo">
+
+                        </picture>
+                        
                         <p class="portfolio-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
@@ -151,11 +286,32 @@
             <li class="portfolio-list__item">
                 <a href="" class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img src="./images/images.portfolio/inspiration.jpg" alt="Превью веб-сайта" width="370" class="portfolio-list__photo">
-                        <p class="portfolio-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                        <picture>
+
+                            <source srcset="
+                                ./images/images.portfolio/desktop/project-6-1x_desk.jpg 1x,
+                                ./images/images.portfolio/desktop/project-6-2x_desk.jpg 2x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/images.portfolio/tablet/project-6-1x_tablet.jpg 1x,
+                                ./images/images.portfolio/tablet/project-3-2x_tablet.jpg 2x
+                                " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/images.portfolio/mob/project-6-1x_mob.jpg 1x,
+                                ./images/images.portfolio/mob/project-6-2x_mob.jpg 2x
+                                " media="(min-width: 320px)" />
+                            
+                                <img src="./images/images.portfolio/mob/project-6-1x_mob.jpg" 
+                                alt="Превью веб-сайта" 
+                                width="370"
+                                class="portfolio-list__photo">
+
+                    </picture>    
+
+                    <p class="portfolio-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
-                    </div>
+                </div>
                     <div class="portfolio-list__content">
                         <h2 class="portfolio-list__subtitle" lang="en">Inspiration has no Borders</h2>
                         <p class="portfolio-list__text" >Веб-сайт</p>
@@ -165,7 +321,29 @@
             <li class="portfolio-list__item">
                 <a href="" class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img src="./images/images.portfolio/limited_adition.jpg" alt="Изображение глянцевого журнала" width="370" class="portfolio-list__photo">
+                        <picture>
+
+                            <source srcset="
+                                /images/images.portfolio/desktop/project-7-1x_desk.jpg 1x,
+                                /images/images.portfolio/desktop/project-7-2x_desk.jpg 2x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/images.portfolio/tablet/project-7-1x_tablet.jpg 1x,
+                                ./images/images.portfolio/tablet/project-7-2x_tablet.jpg 2x
+                                " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/images.portfolio/mob/project-7-1x_mob.jpg 1x,
+                                ./images/images.portfolio/mob/project-7-2x_mob.jpg 2x
+                                " media="(min-width: 320px)" />
+                        
+                                <img 
+                                src="./images/images.portfolio/mob/project-7-1x_mob.jpg" 
+                                alt="Превью веб-сайта" 
+                                width="370"
+                                class="portfolio-list__photo">
+
+                        </picture>
+                       
                         <p class="portfolio-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
@@ -179,7 +357,28 @@
             <li class="portfolio-list__item">
                 <a href="" class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                    <img src="./images/images.portfolio/lab.jpg" alt="Изображение логотипа компании" width="370" class="portfolio-list__photo">
+                    <picture>
+                    
+                        <source srcset="       
+                            /images/images.portfolio/desktop/project-8-1x_desk.jpg 1x,
+                            /images/images.portfolio/desktop/project-8-2x_desk.jpg 2x
+                            " media="(min-width: 1200px)" />
+                        <source srcset="
+                            ./images/images.portfolio/tablet/project-8-1x_tablet.jpg 1x,
+                            ./images/images.portfolio/tablet/project-8-2x_tablet.jpg 2x
+                            " media="(min-width: 768px)" />
+                        <source srcset="
+                            ./images/images.portfolio/mob/project-8-1x_mob.jpg 1x,
+                            ./images/images.portfolio/mob/project-8-2x_mob.jpg 2x
+                            " media="(min-width: 320px)" />
+                        
+                            <img 
+                            src="./images/images.portfolio/mob/project-8-1x_mob.jpg" 
+                            alt="Превью веб-сайта" 
+                            width="370"
+                            class="portfolio-list__photo">
+            
+                    </picture>
                     <p class="portfolio-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
@@ -193,7 +392,28 @@
             <li class="portfolio-list__item" >
                 <a href="" class="portfolio-list__link">
                     <div class="portfolio-list__thumb">
-                        <img src="./images/images.portfolio/growing_business.jpg" alt="Превью приложения" width="370" class="portfolio-list__photo">
+                        <picture>
+                        
+                            <source srcset="
+                                /images/images.portfolio/desktop/project-9-1x_desk.jpg 1x,
+                                /images/images.portfolio/desktop/project-7-2x_desk.jpg 2x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/images.portfolio/tablet/project-9-1x_tablet.jpg 1x,
+                                ./images/images.portfolio/tablet/project-9-2x_tablet.jpg 2x
+                                " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/images.portfolio/mob/project-9-1x_mob.jpg 1x,
+                                ./images/images.portfolio/mob/project-9-2x_mob.jpg 2x
+                                " media="(min-width: 320px)" />
+                        
+                                <img 
+                                src="./images/images.portfolio/mob/project-9-1x_mob.jpg" 
+                                alt="Превью веб-сайта"
+                                width="370"
+                            class="portfolio-list__photo">
+                        
+                        </picture>
                         <p class="portfolio-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>

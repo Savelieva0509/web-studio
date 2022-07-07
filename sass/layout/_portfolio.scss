@@ -8,7 +8,7 @@
         justify-content: center;
     }
         @include tablet {
-            justify-content: center;
+        justify-content: center;
     }
 }
 
@@ -45,7 +45,6 @@
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
 }
 

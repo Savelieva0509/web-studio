@@ -1,5 +1,10 @@
 .services {
     padding-bottom: 94px;
+    display: none;
+    
+    @include desktop {
+        display: block;
+    }
 }
 
 .services-list {
