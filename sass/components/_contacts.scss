@@ -47,9 +47,23 @@
     }
 }
 
+.header-contacts__link--email {
+    @include tablet {
+        padding-top: 21px;
+    }
+}
+
+.header-contacts__link--phone {
+    @include tablet {
+        padding-bottom: 21px;
+    }
+}
+
+
 .header-contacts__link {
         @include tablet {
         @include font (12px, 500, 1.16, 0.02em);
+        
     }
 
     @include desktop {

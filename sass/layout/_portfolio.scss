@@ -57,7 +57,7 @@
     
         @include desktop {
             width: calc((100% - 60px) / 3);
-        }
+        }              
 }
 
 .portfolio-list__thumb {
@@ -69,6 +69,7 @@
     position: absolute;
     top: 0;
     transform: translateY(101%);
+    overflow-y: scroll;
 
     @include font(18px, null, 1.55, 0.03em);
     
@@ -98,6 +99,12 @@
                 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
+
+    @include tablet {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    }
 }
 
 .portfolio-list__photo {
@@ -126,4 +133,8 @@
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
+
+    @include tablet {
+        flex-grow: 1;
+    }
 }
