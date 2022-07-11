@@ -516,6 +516,7 @@ body {
   .modal {
     width: 528px;
     height: 581px;
+    max-width: 528px;
   }
 }
 .backdrop.is-hidden .modal {
